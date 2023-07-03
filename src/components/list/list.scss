@@ -1,0 +1,51 @@
+.list{
+    width: 100%;
+    margin-top: 20px;
+   
+    .listTitle{
+        color: white;
+        font-size: 30px;
+       
+    }
+    .wrapper{
+        display: flex;
+        align-items: center;
+        position: relative;
+        color: white;
+        
+        margin-top: 20px;
+
+        .sliderArrow{
+           border-radius: 5px;
+            background-color: rgb(172, 80, 80);
+            color: white;
+            width: 30px;
+            height: 50px;
+            opacity: 0.3;
+            z-index: 90;
+
+            &:hover{
+                opacity: 1;
+
+            }
+
+            &.right{
+                position: absolute;
+                right: 5px;
+               
+            }
+            &.left{
+                position: absolute;
+                left: 5px;
+               
+            }
+        }
+
+        .container{
+            display: flex;
+            color: black;
+            transform: translateX();
+            transition: all 0.5s ease;
+        }
+    }
+}
